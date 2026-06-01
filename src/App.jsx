@@ -1,6 +1,9 @@
+import { councilWarnings } from "./data/councilWarnings";
 import "./App.css";
 
 function App() {
+  const currentWarning =
+    councilWarnings[Math.floor(Math.random() * councilWarnings.length)];
   return (
     <main className="page-shell">
       <section className="construction-card">
@@ -15,6 +18,11 @@ function App() {
         <div className="status-box">
           <p>Status: Under Construction</p>
           <p>Public visitor center pending activation.</p>
+        </div>
+
+        <div className="site-warning-card">
+          <span>{currentWarning.label}</span>
+          <strong>{currentWarning.text}</strong>
         </div>
 
         <p className="cubie-note">

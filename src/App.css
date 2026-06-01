@@ -182,3 +182,36 @@
     border-right-color: var(--border);
   }
 }
+
+.site-warning-card {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid rgba(255, 80, 120, 0.35);
+  border-radius: 4px 18px 4px 18px;
+  background:
+    repeating-linear-gradient(
+      -45deg,
+      rgba(255, 80, 120, 0.12),
+      rgba(255, 80, 120, 0.12) 10px,
+      rgba(255, 80, 120, 0.04) 10px,
+      rgba(255, 80, 120, 0.04) 20px
+    );
+}
+
+.site-warning-card span {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ff8eb3;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.site-warning-card strong {
+  display: block;
+  color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
